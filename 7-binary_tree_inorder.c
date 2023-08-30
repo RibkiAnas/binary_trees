@@ -14,7 +14,7 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 
 	/* Recursively traverse the left subtree */
 	binary_tree_inorder(tree->left, func);
-	
+
 	/* Call the function with the value in the node */
 	func(tree->n);
 
